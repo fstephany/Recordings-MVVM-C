@@ -1,0 +1,42 @@
+{
+  "rules": [
+    {
+      "name": "ViewController",
+      "pattern": "ViewController?$",
+      "use": [
+        "ViewModel",
+        "ViewControllerDelegate",
+        "Helpers"
+      ],
+      "forbidden": [
+        "Model"
+      ]
+    },
+    {
+      "name": "ViewModel",
+      "pattern": "ViewModel?$",
+      "use": [
+        "Model"
+      ]
+    },
+    {
+      "name": "Model",
+      "pattern": "Model?$"
+    },
+    {
+      "name": "Coordinator",
+      "pattern": "Coordinator?$",
+      "use": [
+        "ViewControllerDelegate"
+      ]
+    },
+    {
+      "name": "ViewControllerDelegate",
+      "pattern": "ViewControllerDelegate?$",
+    },
+    {
+      "name": "Helpers",
+      "pattern": "Helpers?$"
+    }
+  ]
+}
