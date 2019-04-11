@@ -14,6 +14,8 @@ class FolderViewController: UITableViewController {
     let viewModel = FolderViewModel()
     let disposeBag = DisposeBag()
 
+	let somethingBad = Store(url: nil)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.navigationTitle.bind(to: rx.title).disposed(by: disposeBag)
