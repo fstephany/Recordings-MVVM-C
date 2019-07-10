@@ -21,6 +21,7 @@ class PlayViewController: UIViewController, UITextFieldDelegate {
 
     let viewModel = PlayViewModel()
     let disposeBag = DisposeBag()
+    // let somethingBad = Store(url: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
